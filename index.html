@@ -13,12 +13,13 @@
       background-color: #f6f8fa;
       border-bottom: 6px solid #d0d7de;
       font-size: 56px;
+      text-align: center;
     }
     .responsive-table td {
       padding: 36px 20px;
       border-bottom: 3px solid #e1e4e8;
     }
-    /* Huruf 列と Cara Baca 列を中央寄せ */
+    /* 各列の配置設定 */
     .responsive-table .col-huruf {
       text-align: center;
       font-size: 64px;
@@ -30,8 +31,15 @@
     .responsive-table .col-kata {
       text-align: left;
     }
+    /* 中国語訳を改行して小さく表示する場合のデザイン（必要に応じて調整可能） */
+    .responsive-table .cn-translation {
+      display: block;
+      font-size: 0.8em;
+      color: #57606a;
+      margin-top: 4px;
+    }
     
-    /* スマホ表示時の超々巨大文字設定 */
+    /* スマホ表示時の設定 */
     @media (max-width: 600px) {
       .responsive-table {
         font-size: 64px;
@@ -53,141 +61,141 @@
     <table class="responsive-table">
       <thead>
         <tr>
-          <th style="width: 25%; text-align: center;">Huruf</th>
-          <th style="width: 30%; text-align: center;">Cara Baca</th>
-          <th style="width: 45%; text-align: left;">Kata</th>
+          <th style="width: 25%;">Huruf</th>
+          <th style="width: 30%;">Cara Baca</th>
+          <th style="width: 45%;">Kata</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td class="col-huruf">A</td>
           <td class="col-baca">a</td>
-          <td class="col-kata">Allah (上帝)</td>
+          <td class="col-kata">Allah<span class="cn-translation">(上帝)</span></td>
         </tr>
         <tr>
           <td class="col-huruf">B</td>
           <td class="col-baca">be</td>
-          <td class="col-kata">Baik (好)</td>
+          <td class="col-kata">Baik<span class="cn-translation">(好)</span></td>
         </tr>
         <tr>
           <td class="col-huruf">C</td>
           <td class="col-baca">ce</td>
-          <td class="col-kata">Ciptaan (創造物)</td>
+          <td class="col-kata">Ciptaan<span class="cn-translation">(創造物)</span></td>
         </tr>
         <tr>
           <td class="col-huruf">D</td>
           <td class="col-baca">de</td>
-          <td class="col-kata">Dunia (世界)</td>
+          <td class="col-kata">Dunia<span class="cn-translation">(世界)</span></td>
         </tr>
         <tr>
           <td class="col-huruf">E</td>
           <td class="col-baca">e</td>
-          <td class="col-kata">Emas (黃金)</td>
+          <td class="col-kata">Emas<span class="cn-translation">(黃金)</span></td>
         </tr>
         <tr>
           <td class="col-huruf">F</td>
           <td class="col-baca">ef</td>
-          <td class="col-kata">Foto (照片)</td>
+          <td class="col-kata">Foto<span class="cn-translation">(照片)</span></td>
         </tr>
         <tr>
           <td class="col-huruf">G</td>
           <td class="col-baca">ge</td>
-          <td class="col-kata">Gereja (教會)</td>
+          <td class="col-kata">Gereja<span class="cn-translation">(教會)</span></td>
         </tr>
         <tr>
           <td class="col-huruf">H</td>
           <td class="col-baca">ha</td>
-          <td class="col-kata">Hati (心)</td>
+          <td class="col-kata">Hati<span class="cn-translation">(心)</span></td>
         </tr>
         <tr>
           <td class="col-huruf">I</td>
           <td class="col-baca">i</td>
-          <td class="col-kata">Iman (信心)</td>
+          <td class="col-kata">Iman<span class="cn-translation">(信心)</span></td>
         </tr>
         <tr>
           <td class="col-huruf">J</td>
           <td class="col-baca">je</td>
-          <td class="col-kata">Jalan (道路)</td>
+          <td class="col-kata">Jalan<span class="cn-translation">(道路)</span></td>
         </tr>
         <tr>
           <td class="col-huruf">K</td>
           <td class="col-baca">ka</td>
-          <td class="col-kata">Kasih (愛心)</td>
+          <td class="col-kata">Kasih<span class="cn-translation">(愛心)</span></td>
         </tr>
         <tr>
           <td class="col-huruf">L</td>
           <td class="col-baca">el</td>
-          <td class="col-kata">Lagu (歌)</td>
+          <td class="col-kata">Lagu<span class="cn-translation">(歌)</span></td>
         </tr>
         <tr>
           <td class="col-huruf">M</td>
           <td class="col-baca">em</td>
-          <td class="col-kata">Malaikat (天使)</td>
+          <td class="col-kata">Malaikat<span class="cn-translation">(天使)</span></td>
         </tr>
         <tr>
           <td class="col-huruf">N</td>
           <td class="col-baca">en</td>
-          <td class="col-kata">Nama (名字)</td>
+          <td class="col-kata">Nama<span class="cn-translation">(名字)</span></td>
         </tr>
         <tr>
           <td class="col-huruf">O</td>
           <td class="col-baca">o</td>
-          <td class="col-kata">Orang (人)</td>
+          <td class="col-kata">Orang<span class="cn-translation">(人)</span></td>
         </tr>
         <tr>
           <td class="col-huruf">P</td>
           <td class="col-baca">pe</td>
-          <td class="col-kata">Pujian (讚美)</td>
+          <td class="col-kata">Pujian<span class="cn-translation">(讚美)</span></td>
         </tr>
         <tr>
           <td class="col-huruf">Q</td>
           <td class="col-baca">ki</td>
-          <td class="col-kata">Quran (可蘭經)</td>
+          <td class="col-kata">Quran<span class="cn-translation">(可蘭經)</span></td>
         </tr>
         <tr>
           <td class="col-huruf">R</td>
           <td class="col-baca">er</td>
-          <td class="col-kata">Raja (國王)</td>
+          <td class="col-kata">Raja<span class="cn-translation">(國王)</span></td>
         </tr>
         <tr>
           <td class="col-huruf">S</td>
           <td class="col-baca">es</td>
-          <td class="col-kata">Saksi (見證人)</td>
+          <td class="col-kata">Saksi<span class="cn-translation">(見證人)</span></td>
         </tr>
         <tr>
           <td class="col-huruf">T</td>
           <td class="col-baca">te</td>
-          <td class="col-kata">Tobat (悔改)</td>
+          <td class="col-kata">Tobat<span class="cn-translation">(悔改)</span></td>
         </tr>
         <tr>
           <td class="col-huruf">U</td>
           <td class="col-baca">u</td>
-          <td class="col-kata">Ujian (考驗)</td>
+          <td class="col-kata">Ujian<span class="cn-translation">(考驗)</span></td>
         </tr>
         <tr>
           <td class="col-huruf">V</td>
           <td class="col-baca">ve</td>
-          <td class="col-kata">Video (影片)</td>
+          <td class="col-kata">Video<span class="cn-translation">(影片)</span></td>
         </tr>
         <tr>
           <td class="col-huruf">W</td>
           <td class="col-baca">we</td>
-          <td class="col-kata">Waktu (時間)</td>
+          <td class="col-kata">Waktu<span class="cn-translation">(時間)</span></td>
         </tr>
         <tr>
           <td class="col-huruf">X</td>
           <td class="col-baca">eks</td>
-          <td class="col-kata">Xerxes (薛西斯)</td>
+          <td class="col-kata">Xerxes<span class="cn-translation">(薛西斯)</span></td>
         </tr>
         <tr>
           <td class="col-huruf">Y</td>
           <td class="col-baca">ye</td>
-          <td class="col-kata">Yehuwa (耶和華)</td>
+          <td class="col-kata">Yehuwa<span class="cn-translation">(耶和華)</span></td>
         </tr>
         <tr>
           <td class="col-huruf">Z</td>
           <td class="col-baca">zet</td>
-          <td class="col-kata">Zaman (時代)</td>
+          <td class="col-kata">Zaman<span class="cn-translation">(時代)</span></td>
         </tr>
       </tbody>
     </table>
